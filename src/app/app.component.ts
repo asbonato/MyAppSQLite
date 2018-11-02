@@ -16,16 +16,16 @@ export class MyApp {
     splashScreen: SplashScreen,
     dbProvider: DatabaseProvider) {
 
-    platform.ready().then(() => {
+    //platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
-      dbProvider.createDatabase().then(() => {
+      //statusBar.styleDefault();
+      //dbProvider.createDatabase().then(() => {
         this.abrirHomePage(splashScreen);
-      }).catch((e) => {
-        console.log(e);
-      })
-    })
+      //}).catch((e) => {
+       // console.log(e);
+      //})
+    //})
   }
 
   abrirHomePage(splash: SplashScreen){
